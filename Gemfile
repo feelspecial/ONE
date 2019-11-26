@@ -62,6 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry-rails'
+
 gem 'haml-rails'
 
 group :development, :test do
@@ -70,4 +71,7 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+
+group :production do
+  gem 'unicorn', '5.4.1'
 end
