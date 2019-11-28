@@ -1,0 +1,36 @@
+.a-content
+  .a-content__displayflex 
+    -# .a-font ONE
+    .a-left 
+      .a-left__box 
+        %h2.a-left__box__font 待ち合わせ場所を検索!
+        %input.a-left__box__search 
+    .a-right
+      .a-right__displayflex 
+        .a-right__prefectures
+          .a-right__prefectures__font
+            %label{for:"prefectures"} 都道府県
+            %span.form-require 必須 
+          .a-right__select
+            .a-right__select__box
+              .angle-position
+                %i.fa.fa-angle-down
+        .a-right__station
+          .a-right__station__font
+            %label{for:"prefectures"} 駅名
+            %span.form-require 必須
+          .a-right__select
+            .a-right__select__box
+              .angle-position
+                %i.fa.fa-angle-down
+        .a-right__station
+          .a-right__station__font
+            %label{for:"prefectures"} 建物名
+            %span.form-require 必須
+          .a-right__select
+            .a-right__select__box
+              .angle-position
+                %i.fa.fa-angle-down
+
+        .a-right__button
+          %button
