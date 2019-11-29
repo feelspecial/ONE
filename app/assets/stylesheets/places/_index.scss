@@ -1,99 +1,13 @@
-.a-content{
+.b-content{
   width: 100%;
   height:100%;
   box-sizing: border-box;
   &__displayflex{
     overflow: hidden;               /* はみ出しは非表示     */
-    background-image: image-url("flag.png"); 
-    background-size: cover;
     height:743px;
-    position: relative;
-    .a-back{
-      position: absolute; 
-      &__explain{
-      opacity:0.3;
-      font-size:60px;
-      margin:20px;
-      }
-      &__one{
-      color:gray; 
-      opacity:0.2;
-      font-size:550px;
-      text-align: center;
-      }  
-    }
-  }  
+  }
 }
-.a-left{
+.b-left{
   float:left;
-  padding:22% 13%;
-  &__box{
-    &__font{
-    font-size:32px;
-    opacity:0.5;
-    } 
-  &__search{
-    width: 330px;
-    height:45px;
-    border-radius: 50px;
-    border:solid 1px #EEEEEE;
-  
-  } 
-  } 
-}
-.a-right{
-  float:left;
-  &__displayflex{
-    padding:150px;
-    }
-  &__prefectures{
-  }
-  &__font{
-  font-size:25px;
-    &__black{
-      opacity:0.5;
-    }
-    &__red{
-      color:white;
-      opacity:0.8;
-      margin: 0 0 0 8px;
-      padding: 2px 4px;
-      border-radius: 2px;
-      vertical-align: top;
-      background-color: red;
-    }
-  }
-  &__select{
-  padding:20px 0 20px 0;
-    &__box{
-      position: relative;
-      width: 330px;
-      height:45px;
-      border:solid 1px #EEEEEE;
-      border-radius: 50px;
-      background-color: white;
-    }
-  .angle-position{
-    position: absolute;
-    left:290px;
-    top:7px;
-    opacity:0.5;
-    font-size:20px;
-  }
-  }
-  &__button{
-    margin:23px 60px 0 60px;
-    &__about{
-    width: 200px;
-    height:50px;
-    border-radius: 5px;
-    background-color: red;
-    opacity:0.8;
-    border:solid 1px #EEEEEE;
-    }
-    &__font{
-      color:white;
-      font-size:30px;
-    }
-  }
+  padding:0;
 }
