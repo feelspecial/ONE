@@ -5,9 +5,32 @@
   &__displayflex{
     overflow: hidden;               /* はみ出しは非表示     */
     height:743px;
+    background-color: #EDEFEE; 
+    background-size: cover;
   }
 }
 .b-left{
-  float:left;
-  padding:0;
+  float: left;
+  padding:50px 0 0 20px;
+  &__top{
+    border:solid 1px white;
+    border-radius: 50px;
+    background-color: white;
+    &__title{
+      line-height:60px;
+      text-align: center;
+      font-size:50px;
+      opacity:0.5;
+    }
+  }
+  &__body{
+    padding:20px 0 0 0;
+    &__box{     
+      &__image{
+        border:solid 4px white; 
+        height:500px;
+        width:700px;
+      }
+    }
+  }
 }
