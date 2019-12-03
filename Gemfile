@@ -62,5 +62,20 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry-rails'
+
 gem 'haml-rails'
+
 gem 'font-awesome-sass', '~> 5.4.1'
+
+group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+end
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
