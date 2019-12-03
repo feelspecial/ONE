@@ -65,6 +65,8 @@ gem 'pry-rails'
 
 gem 'haml-rails'
 
+gem 'font-awesome-sass', '~> 5.4.1'
+
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'
@@ -78,3 +80,4 @@ group :production do
 end
 
 gem 'ancestry'
+
