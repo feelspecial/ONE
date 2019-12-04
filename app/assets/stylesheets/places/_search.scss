@@ -67,11 +67,19 @@
   padding:20px 0 20px 0;
     &__box{
       position: relative;
-      width: 330px;
+      width: 300px;
       height:45px;
       border:solid 1px #EEEEEE;
       border-radius: 50px;
       background-color: white;
+      font-size: 20px;
+      &__parent{
+        opacity:0.5;
+        border:none;
+        height: 45px;
+        width: 300px;
+        border-radius: 50px;
+      }
     }
   .angle-position{
     position: absolute;

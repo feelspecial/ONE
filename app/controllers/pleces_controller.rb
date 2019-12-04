@@ -1,5 +1,6 @@
 class PlecesController < ApplicationController
   def search
+    @place = Place.all
     #セレクトボックスの初期値設定
     @place_parent_array = ["ここを選択してください"]
       #データベースから、親カテゴリーのみ抽出し、配列化
