@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :pleces do
     collection do
       get 'search'
+      get 'get_place_children', defaults: { format: 'json' }
+      get 'get_place_grandchildren', defaults: { format: 'json' }
     end
   end
 end

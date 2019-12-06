@@ -81,3 +81,5 @@ end
 
 gem 'ancestry'
 
+gem 'jquery-rails' 
+gem 'jquery-ui-rails'
