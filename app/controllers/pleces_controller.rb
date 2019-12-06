@@ -2,7 +2,7 @@ class PlecesController < ApplicationController
   def search
     @place = Place.all
     #セレクトボックスの初期値設定
-    @place_parent_array = ["ここを選択してください"]
+    @place_parent_array = ["---"]
       #データベースから、親カテゴリーのみ抽出し、配列化
       Place.where(ancestry: nil).each do |parent|
           @place_parent_array << parent.name
