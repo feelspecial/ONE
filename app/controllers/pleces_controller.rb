@@ -1,5 +1,6 @@
 class PlecesController < ApplicationController
   def search
+
     @place = Place.all
     #セレクトボックスの初期値設定
     @place_parent_array = ["---"]
@@ -20,9 +21,16 @@ class PlecesController < ApplicationController
   def get_place_grandchildren
     #選択された子カテゴリーに紐付く孫カテゴリーの配列を取得
     @place_grandchildren = Place.find("#{params[:child_id]}").children
+    
   end
 
   def index
+
+    @place_parent_array = ["---"]
+    #データベースから、親カテゴリーのみ抽出し、配列化
+    Place.where(ancestry: nil).each do |parent|
+        @place_parent_array << parent.name
+    end
   end
 
   def show

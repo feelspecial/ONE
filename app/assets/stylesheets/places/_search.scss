@@ -18,7 +18,7 @@
       &__one{
       color:gray; 
       opacity:0.2;
-      font-size:550px;
+      font-size:150px;
       text-align: center;
       }  
     }
@@ -49,11 +49,12 @@
   &__prefectures{
   }
   &__font{
-  font-size:25px;
     &__black{
       opacity:0.5;
+      font-size:25px;
     }
     &__red{
+      font-size:25px;
       color:white;
       opacity:0.8;
       margin: 0 0 0 8px;
@@ -91,17 +92,15 @@
   }
   &__button{
     margin:23px 60px 0 60px;
-    &__about{
-    width: 200px;
-    height:50px;
-    border-radius: 5px;
-    background-color: red;
-    opacity:0.8;
-    border:solid 1px #EEEEEE;
-    }
     &__font{
       color:white;
       font-size:30px;
+      background-color: red;
+      width: 200px;
+      height:50px;
+      border-radius: 5px;
+      opacity:0.8;
+      border:solid 1px #EEEEEE;
     }
   }
 }
