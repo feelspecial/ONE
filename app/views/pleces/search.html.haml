@@ -3,9 +3,10 @@
     .b-left
       .b-left__top
         .b-left__top__title
+          = @place.name
       .b-left__body
         .b-left__body__box    
           %figure
             = image_tag 'flag.png',class:"b-left__body__box__image"
     .a-right
-      =render 'right'   
+      =render 'right'      

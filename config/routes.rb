@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "pleces#index"
   resources :pleces ,only:[:index,:show] do 
     collection do
+      get 'search'
       get 'get_place_children', defaults: { format: 'json' }
       get 'get_place_grandchildren', defaults: { format: 'json' }
     end
