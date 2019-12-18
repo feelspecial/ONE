@@ -1,7 +1,7 @@
-$(function(){
+$(document).on('turbolinks:load', function(){
   // カテゴリーセレクトボックスのオプションを作成
   function appendOption(place){
-    var html = `<option value="${place.name}" data-place="${place.id}">${place.name}</option>`;
+    var html = `<option value="${place.id}" data-place="${place.id}">${place.name}</option>`;
     return html;
   }
   // 子カテゴリーの表示作成
@@ -13,7 +13,7 @@ $(function(){
                           <div class='a-right__select' id= 'children_wrapper'>
                             <div class='a-right__select__box'>
                               <select class="a-right__select__box__parent" id="child_place" name="place_id">
-                                <option value="---" data-place="---">---</option>
+                                <option value="---" dataplace="---">---</option>
                                 ${insertHTML}
                               <select>
                             </div>
@@ -30,7 +30,7 @@ $(function(){
                               <span class='a-right__font__red'>必須</span>
                               <div class='a-right__select' id= 'grandchildren_wrapper'>
                                 <div class='a-right__select__box'>
-                                  <select class="a-right__select__box__parent" id="grandchild_place" name="place_id">
+                                  <select class="a-right__select__box__parent" id="grandchild_place" name="places_id">
                                     <option value="---" data-place="---">---</option>
                                     ${insertHTML}
                                   </select>

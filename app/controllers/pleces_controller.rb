@@ -1,13 +1,11 @@
 class PlecesController < ApplicationController
-  def search
 
-    @place = Place.all
-    #セレクトボックスの初期値設定
+  def index
     @place_parent_array = ["---"]
-      #データベースから、親カテゴリーのみ抽出し、配列化
-      Place.where(ancestry: nil).each do |parent|
-          @place_parent_array << parent.name
-      end
+    #データベースから、親カテゴリーのみ抽出し、配列化
+    Place.where(ancestry: nil).each do |parent|
+        @place_parent_array << parent.name
+    end
   end
 
    # 以下全て、formatはjsonのみ
@@ -24,15 +22,17 @@ class PlecesController < ApplicationController
     
   end
 
-  def index
-
+  def search
+    @place = Place.find(params[:places_id])
+    #セレクトボックスの初期値設定
     @place_parent_array = ["---"]
-    #データベースから、親カテゴリーのみ抽出し、配列化
-    Place.where(ancestry: nil).each do |parent|
-        @place_parent_array << parent.name
-    end
+      #データベースから、親カテゴリーのみ抽出し、配列化
+      Place.where(ancestry: nil).each do |parent|
+          @place_parent_array << parent.name
+      end
   end
 
   def show
   end
+
 end

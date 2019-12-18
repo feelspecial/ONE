@@ -9,7 +9,7 @@
   -#         %i.fa.fa-angle-down
 
   .a-right__prefectures
-    = form_with url:pleces_path, local: true,method: :get do |f|
+    = form_with  url: search_pleces_path, local: true,method: :get do |f|
       .a-right__font
         = f.label '都道府県', class: 'a-right__font__black'
         %span.a-right__font__red 必須
