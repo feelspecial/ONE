@@ -11,19 +11,19 @@ okinawa = Place.create(name: "沖繩県")
 
 #子カテゴリ,孫カテゴリ:北海道
 hokkaido_shintitose = hokkaido.children.create(name: "新千歳空港")
-hokkaido_shintitose.children.create([{name: "到着ロビー"}])
+hokkaido_shintitose.children.create!(name: "到着ロビー",images_id: "1")
 
 #子カテゴリ,孫カテゴリ:千葉県
 chiba_maihama = chiba.children.create(name: "舞浜駅")
-chiba_maihama.children.create([{name:"改札"}])
+chiba_maihama.children.create!(name:"改札",images_id: "2")
 
 tokyo_shibuya = tokyo.children.create(name: "渋谷駅")
-tokyo_shibuya.children.create([{name: "ハチ公口"}])
+tokyo_shibuya.children.create!(name: "ハチ公口",images_id: "3")
 
 #子カテゴリ,孫カテゴリ:愛知県
 aichi_nagoya = aichi.children.create(name: "名古屋駅")
-aichi_nagoya.children.create([{name: "金時計"}])
+aichi_nagoya.children.create!(name: "金時計",images_id: "4")
 
 #子カテゴリ,孫カテゴリ:沖繩県
 okinawa_naha = okinawa.children.create(name:"那覇空港")
-okinawa_naha.children.create([{name:"到着ロビー"}])
+okinawa_naha.children.create!(name:"到着ロビー",images_id: "5")

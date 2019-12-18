@@ -10,14 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_16_034323) do
+ActiveRecord::Schema.define(version: 2019_12_18_055204) do
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "place_id"
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["place_id"], name: "index_images_on_place_id"
   end
 
   create_table "places", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -31,6 +29,5 @@ ActiveRecord::Schema.define(version: 2019_12_16_034323) do
     t.index ["images_id"], name: "index_places_on_images_id"
   end
 
-  add_foreign_key "images", "places"
   add_foreign_key "places", "images", column: "images_id"
 end
