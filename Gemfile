@@ -83,3 +83,6 @@ gem 'ancestry'
 
 gem 'jquery-rails' 
 gem 'jquery-ui-rails'
+
+gem 'carrierwave'
+gem 'mini_magick'

@@ -1,10 +1,5 @@
-#親カテゴリ:北海道
-Image.create(image: "https://static.mercdn.net/item/detail/orig/photos/m99001144593_3.jpg?1576489337")
-#親カテゴリ:千葉県
-Image.create(image: "https://static.mercdn.net/item/detail/orig/photos/m99001144593_2.jpg?1576489337")
-#親カテゴリ:東京都
-Image.create(image: "https://static.mercdn.net/item/detail/orig/photos/m99001144593_1.jpg?1576489337")
-#親カテゴリ:愛知県
-Image.create(image: "https://static.mercdn.net/item/detail/orig/photos/m99001144593_5.jpg?1576489337")
-#親カテゴリ:沖繩県
-Image.create(image: "https://static.mercdn.net/item/detail/orig/photos/m99001144593_4.jpg?1576489337")
+Image.create!(image: open("#{Rails.root}/db/photos/sapporo.jpg"),places_id: "7")
+Image.create!(image: open("#{Rails.root}/db/photos/maihama.jpg"),places_id: "9")
+Image.create!(image: open("#{Rails.root}/db/photos/shibuya.jpg"),places_id: "11")
+Image.create!(image: open("#{Rails.root}/db/photos/nagoya.jpg"),places_id: "13")
+Image.create!(image: open("#{Rails.root}/db/photos/naha.jpg"),places_id: "15")
