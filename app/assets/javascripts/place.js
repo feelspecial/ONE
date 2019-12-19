@@ -7,10 +7,10 @@ $(document).on('turbolinks:load', function(){
   // 子カテゴリーの表示作成
   function appendChidrenBox(insertHTML){
     var childSelectHtml = '';
-    childSelectHtml = `<div class='a-right__fonts'>
+    childSelectHtml = `<div class='a-right__fonts' id= 'children_wrapper'>
                           <label class='a-right__font__black'>駅名</label>
                           <span class='a-right__font__red'>必須</span>
-                          <div class='a-right__select' id= 'children_wrapper'>
+                          <div class='a-right__select'>
                             <div class='a-right__select__box'>
                               <select class="a-right__select__box__parent" id="child_place" name="place_id">
                                 <option value="---" dataplace="---">---</option>
@@ -25,10 +25,10 @@ $(document).on('turbolinks:load', function(){
   // 孫カテゴリーの表示作成
   function appendGrandchidrenBox(insertHTML){
     var grandchildSelectHtml = '';
-    grandchildSelectHtml = `<div class='a-right__fonts'>
+    grandchildSelectHtml = `<div class='a-right__fonts' id= 'grandchildren_wrapper'>
                               <label class='a-right__font__black'>集合場所</label>
                               <span class='a-right__font__red'>必須</span>
-                              <div class='a-right__select' id= 'grandchildren_wrapper'>
+                              <div class='a-right__select'>
                                 <div class='a-right__select__box'>
                                   <select class="a-right__select__box__parent" id="grandchild_place" name="places_id">
                                     <option value="---" data-place="---">---</option>
