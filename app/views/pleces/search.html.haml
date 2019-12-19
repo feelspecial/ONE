@@ -6,9 +6,8 @@
           = @place.name
       .b-left__body
         .b-left__body__box  
-        - @place.images.each do |image|   
-          = link_to plece_path(@place) do
-            %figure
-              = image_tag "#{ image.image}" ,class:"b-left__body__box__image"
+        - @place.images.each do |image|    
+          %figure
+            = image_tag "#{ image.image}" ,class:"b-left__body__box__image"
     .a-right
       =render 'right'      
