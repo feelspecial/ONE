@@ -1,5 +1,10 @@
-.b-content
-  .b-content__displayflex 
-    .b-left
-      .b-left__top
-        .b-left__top__title あ
+.c-content
+  .c-content__displayflex 
+    .c-top
+      .c-top__title
+        = @place.name
+    .c-body
+      .c-body__box  
+      - @place.images.each do |image|   
+        %figure
+          = image_tag "#{ image.image}" ,class:"c-body__box__image"
