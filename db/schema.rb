@@ -25,8 +25,6 @@ ActiveRecord::Schema.define(version: 2019_12_18_090514) do
     t.integer "path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "ancestry"
-    t.index ["ancestry"], name: "index_places_on_ancestry"
   end
 
   add_foreign_key "images", "places"
