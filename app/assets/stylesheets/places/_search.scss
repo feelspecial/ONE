@@ -4,7 +4,7 @@
   box-sizing: border-box;
   &__displayflex{
     overflow: hidden;               /* はみ出しは非表示     */
-    background-image: image-url("flag.png"); 
+    background-image: image-url("49919447ddfa72ad3e38c78a04a2bbb4.png"); 
     background-size: cover;
     height:743px;
     position: relative;
@@ -18,7 +18,7 @@
       &__one{
       color:gray; 
       opacity:0.2;
-      font-size:550px;
+      font-size:150px;
       text-align: center;
       }  
     }
@@ -49,11 +49,12 @@
   &__prefectures{
   }
   &__font{
-  font-size:25px;
     &__black{
       opacity:0.5;
+      font-size:25px;
     }
     &__red{
+      font-size:25px;
       color:white;
       opacity:0.8;
       margin: 0 0 0 8px;
@@ -67,11 +68,19 @@
   padding:20px 0 20px 0;
     &__box{
       position: relative;
-      width: 330px;
+      width: 300px;
       height:45px;
       border:solid 1px #EEEEEE;
       border-radius: 50px;
       background-color: white;
+      font-size: 20px;
+      &__parent{
+        opacity:0.5;
+        border:none;
+        height: 45px;
+        width: 300px;
+        border-radius: 50px;
+      }
     }
   .angle-position{
     position: absolute;
@@ -83,17 +92,15 @@
   }
   &__button{
     margin:23px 60px 0 60px;
-    &__about{
-    width: 200px;
-    height:50px;
-    border-radius: 5px;
-    background-color: red;
-    opacity:0.8;
-    border:solid 1px #EEEEEE;
-    }
     &__font{
       color:white;
       font-size:30px;
+      background-color: red;
+      width: 200px;
+      height:50px;
+      border-radius: 5px;
+      opacity:0.8;
+      border:solid 1px #EEEEEE;
     }
   }
 }

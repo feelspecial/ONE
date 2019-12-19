@@ -1,11 +1,14 @@
-.a-content
-  .a-content__displayflex 
-    .a-back 
-      .a-back__explain 自分の場所がすぐにわかる。待ち合わせ専用アプリ
-      -# .a-back__one ONE
-    .a-left 
-      .a-left__box 
-        %h2.a-left__box__font 待ち合わせ場所を検索!
-        %input.a-left__box__search 
+.b-content
+  .b-content__displayflex 
+    .b-left
+      .b-left__top
+        .b-left__top__title
+          = @place.name
+      .b-left__body
+        .b-left__body__box  
+        - @place.images.each do |image|    
+          = link_to plece_path(@place) do
+            %figure
+              = image_tag "#{ image.image}" ,class:"b-left__body__box__image"
     .a-right
-      =render 'right'
+      =render 'right'      

@@ -1,0 +1,10 @@
+.c-content
+  .c-content__displayflex 
+    .c-top
+      .c-top__title
+        = @place.name
+    .c-body
+      .c-body__box  
+      - @place.images.each do |image|   
+        %figure
+          = image_tag "#{ image.image}" ,class:"c-body__box__image"

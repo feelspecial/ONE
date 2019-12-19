@@ -1,0 +1,5 @@
+Image.create!(image: open("#{Rails.root}/db/photos/sapporo.jpg"),place_id: "7")
+Image.create!(image: open("#{Rails.root}/db/photos/maihama.jpg"),place_id: "9")
+Image.create!(image: open("#{Rails.root}/db/photos/shibuya.jpg"),place_id: "11")
+Image.create!(image: open("#{Rails.root}/db/photos/nagoya.jpg"),place_id: "13")
+Image.create!(image: open("#{Rails.root}/db/photos/naha.jpg"),place_id: "15")

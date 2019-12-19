@@ -79,3 +79,10 @@ group :production do
   gem 'unicorn', '5.4.1'
 end
 
+gem 'ancestry'
+
+gem 'jquery-rails' 
+gem 'jquery-ui-rails'
+
+gem 'carrierwave'
+gem 'mini_magick'
