@@ -13,7 +13,6 @@ The location is conveyed by making the destination square.
 There are many people in the meeting place, and it is hard to find the person you want to meet.
 (待ち合わせ場所には、たくさんの人がいて、会いたい人を見つけるのが大変です。)
 
-- belongs_to :group
 If you use this app, you can display the waiting place by coordinates and know where you are waiting.
 (このアプリを使えば、待っている場所を座標で表示でき、待っている場所がわかります。)
 
