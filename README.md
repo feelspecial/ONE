@@ -1,50 +1,70 @@
-### Association
-- has_many :goals
-- has_many :likes, dependent: :destroy
-- has_many :comments, dependent: :destroy
+# ONE
 
-## groupsテーブル
+"ONE" is an app that makes meeting easy.(ONEは待ち合わせを簡単にするアプリです。)
 
-|Column|Type|Options|
-|------|----|-------|
-|name|string|index: true, null: false|
+# DEMO
+{https://gyazo.com/16b813502b9d4e3573ca70a984a585db}
 
-### Association
-- has_many :users,through:groups_users
-- has_many :messages  
-- has_many :groups_users
+The location is conveyed by making the destination square.
+（目的地をマス目状にすることで位置を伝えます。）
 
-## groups_usersテーブル
+# Features
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+There are many people in the meeting place, and it is hard to find the person you want to meet.
+(待ち合わせ場所には、たくさんの人がいて、会いたい人を見つけるのが大変です。)
 
-### Association
 - belongs_to :group
-- belongs_to :user
-# README
+If you use this app, you can display the waiting place by coordinates and know where you are waiting.
+(このアプリを使えば、待っている場所を座標で表示でき、待っている場所がわかります。)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+It can be used by people from other prefectures and overseas travelers.
+(他県から来た人や、海外旅行者にも利用してもらえます。)
 
-* Ruby version
+# Installation
+・http://3.115.242.44/
+You can use it by accessing the above.
+(上記へアクセスすれば、利用可能です。)
 
-* System dependencies
+# Usage
+・http://3.115.242.44/
 
-* Configuration
+Go to the above and follow the selections.
+(上記へアクセスし、選択欄に従ってください。)
 
-* Database creation
+Once you ’ve selected your destination, share your location details with the image.
+(目的地を選択したら、画像を元に場所の詳細を相手に伝えてください。)
 
-* Database initialization
+# Note
+In the future, we plan to increase the number of meeting places and add a function to accept requests from users.
+(今後待ち合わせ場所を増やしたり、ユーザーからリクエストを受け付ける機能をつける予定です。)
 
-* How to run the test suite
+# Author
+・Yushi
+・Twitter{https://twitter.com/ito_yushi}
+・Wantedly{https://www.wantedly.com/users/124009278}
 
-* Services (job queues, cache servers, search engines, etc.)
+# DB
+## imagesテーブル
 
-* Deployment instructions
+|Column|Type|Options|
+|------|----|-------|
+|place_id|String| foreign_key: true|
+|image|String|
 
-* ...
+### Association
+- belongs_to :place
+- mount_uploader :image, ImageUploader
+
+## placesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|
+|ancestry|
+
+### Association
+- has_many :images
+- has_ancestry
+
+Thank you watching!
