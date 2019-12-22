@@ -4,9 +4,10 @@
   box-sizing: border-box;
   &__displayflex{
     overflow: hidden;               /* はみ出しは非表示     */
-    height:743px;
     background-color: #EDEFEE; 
     background-size: cover;
+    width:100%;
+    height:100%;
   }
 }
 .c-top{
@@ -30,8 +31,8 @@
       position: relative;
       &__image{
         border:solid 4px white; 
-        height:50vw;
-        width:180vh;
+        height:55vw;
+        width:160vh;
     }
   }
 }

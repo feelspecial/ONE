@@ -1,36 +1,37 @@
-.b-content{
-  width: 100%;
+.a-content{
   height:100%;
-  box-sizing: border-box;
+  width: 100%;
+  display: flex;
   &__displayflex{
     overflow: hidden;               /* はみ出しは非表示     */
-    height:743px;
-    background-color: #EDEFEE; 
-    background-size: cover;
-  }
-}
-.b-left{
-  float: left;
-  padding:50px 0 0 20px;
-  &__top{
-    border:solid 1px white;
-    border-radius: 50px;
-    background-color: white;
-    &__title{
-      line-height:60px;
-      text-align: center;
-      font-size:50px;
-      opacity:0.5;
-    }
-  }
-  &__body{
-    padding:20px 0 0 0;
-    &__box{     
-      &__image{
-        border:solid 4px white; 
-        height:500px;
-        width:700px;
+    background-image: image-url("49919447ddfa72ad3e38c78a04a2bbb4.png"); 
+    background-size: cover; 
+    height:100%;
+    width: 100%;
+    &__back{
+      width: 100%;
+      height:20%;
+      &__explain{
+      opacity:0.3;
+      font-size:60px;
+      padding:20px;
       }
+    } 
+    &__right{
+      width:50%;
+      float:left;
+      padding-top:50px;
     }
+    &__left{
+      height:80%;
+      width:50%;
+      float: left;
+      &__one{
+        color:gray; 
+        opacity:0.2;
+        text-align: center;
+        font-size:300px; 
+      }
+    } 
   }
 }

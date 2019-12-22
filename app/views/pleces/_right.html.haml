@@ -1,20 +1,10 @@
 .a-right__displayflex 
-  -# .a-right__prefectures
-  -#   .a-right__font
-  -#     %label.a-right__font__black{for:"prefectures"} 都道府県
-  -#     %span.a-right__font__red 必須 
-  -#   .a-right__select
-  -#     .a-right__select__box
-  -#       .angle-position
-  -#         %i.fa.fa-angle-down
-
-  .a-right__prefectures
-    = form_with  url: search_pleces_path, local: true,method: :get do |f|
-      .a-right__font
-        = f.label '都道府県', class: 'a-right__font__black'
-        %span.a-right__font__red 必須
-        .a-right__select
-          .a-right__select__box
-            = f.select :place, @place_parent_array, {}, {class: 'a-right__select__box__parent', id: 'parent_place'}
-      .a-right__button
-        = f.submit class: 'a-right__button__font', value: "検索する"
+  = form_with  url: search_pleces_path, local: true,method: :get do |f|
+    .a-right__font
+      = f.label '都道府県', class: 'a-right__font__black'
+      %span.a-right__font__red 必須
+      .a-right__select
+        .a-right__select__box
+          = f.select :place, @place_parent_array, {}, {class: 'a-right__select__box__parent', id: 'parent_place'}
+    .a-right__button
+      = f.submit class: 'a-right__button__font', value: "検索する"
