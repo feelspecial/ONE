@@ -17,13 +17,18 @@
  @import "config/colors";
  @import "config/reset";
  @import "mixins/mixin";
- @import "places/search"; 
  @import "places/index";
+ @import "places/right"; 
+ @import "places/search"; 
  @import "places/show";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
 
- .displayflex{
-  display: flex;
+//  .displayflex{
+//   display: flex;
+// }
+
+* {
+  box-sizing: border-box;
 }
