@@ -19,6 +19,7 @@
     border:solid 1px white;
     border-radius: 50px;
     background-color: white;
+    margin:0 0 0 50px;
     &__title{
       line-height:60px;
       text-align: center;
@@ -34,6 +35,13 @@
         height:500px;
         width:700px;
       }
+    }
+  }
+  &__footer{
+    margin:0 0 0 100px;
+    &__font{
+      font-size:30px;
+      opacity:0.5;
     }
   }
 }
