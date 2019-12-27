@@ -3,6 +3,9 @@
     .c-top
       .c-top__title
         = @place.name
+      .c-top__botton
+        = link_to root_path do
+          %button.c-top__botton__root 検索画面へ移動する
     .c-body
       .c-body__box  
       - @place.images.each do |image|   
