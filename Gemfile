@@ -89,3 +89,5 @@ gem 'jquery-ui-rails'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'devise'
