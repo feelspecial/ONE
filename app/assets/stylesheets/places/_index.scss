@@ -26,11 +26,66 @@
       height:80%;
       width:50%;
       float: left;
-      &__one{
-        color:gray; 
-        opacity:0.2;
-        text-align: center;
-        font-size:300px; 
+      &__box{
+        margin:20px 80px 0 80px;
+        &__link{
+          text-decoration: none;
+        }
+        &__font{
+          padding:0 0 0 30px;
+          font-size:30px;
+          opacity:0.5;
+          color: black;
+        }
+        &__image{
+          padding:0 40px 0 30px;
+          -ms-filter: blur(6px);
+          filter: blur(6px);
+          &__back{
+            height:300px;
+            width:500px;
+            background-image: image-url("example.png");
+            background-size: cover; 
+          }  
+        } 
+      &__footer{
+        margin:30px 0 0 30px;
+        &__top{
+          font-size:22px;
+          opacity:0.5;
+          color: black;
+          }
+        &__under{
+          padding:10px 0 0 60px;
+          &__left{
+            float:left;
+            padding:0 40px 0 0;
+            &__button{
+              height:50px;
+              width:170px;
+              background-color: white;
+              color:#00FFFF;
+              font-size:30px;
+              border:solid 5px #00FFFF;
+              border-radius: 10px;
+              cursor: pointer;
+              }
+            }
+          &__right{
+            float:left;
+            &__button{
+              height:50px;
+              width:170px;
+              background-color: white;
+              color:#00FFFF;
+              font-size:30px;
+              border:solid 5px #00FFFF;
+              border-radius: 10px;
+              cursor: pointer;
+              }
+            }          
+          }
+        }       
       }
     } 
   }
