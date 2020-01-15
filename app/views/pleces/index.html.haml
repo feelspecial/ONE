@@ -5,9 +5,18 @@
         %h1 自分の場所がすぐにわかる。待ち合わせ専用アプリ
     .a-content__displayflex__left 
       .a-content__displayflex__left__box
-        .a-content__displayflex__left__box__font
-          %h1.a-content__displayflex__left__box__font__h1 待ち合わせ場所のリクエストはこちら
-        .a-content__displayflex__left__box__image
-          .a-content__displayflex__left__box__image__back          
+        = link_to new_user_session_path , class: "a-content__displayflex__left__box__link" do
+          .a-content__displayflex__left__box__font
+            %h1.a-content__displayflex__left__box__font__h1 利用したい待ち合わせ場所があれば、ここからリクエストできます！
+          .a-content__displayflex__left__box__image
+            .a-content__displayflex__left__box__image__back  
+        .a-content__displayflex__left__box__footer
+          .a-content__displayflex__left__box__footer__top
+            %h2.a-content__displayflex__left__box__footer__top__font リクエストする場合にはログインが必要になります。 
+          .a-content__displayflex__left__box__footer__under
+            .a-content__displayflex__left__box__footer__under__left
+              %button.a-content__displayflex__left__box__footer__under__left__button ログイン
+            .a-content__displayflex__left__box__footer__under__right 
+              %button.a-content__displayflex__left__box__footer__under__right__button 新規登録
     .a-content__displayflex__right
       =render 'right'

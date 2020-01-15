@@ -27,12 +27,27 @@
       width:50%;
       float: left;
       &__box{
-        margin:40px 80px 0 80px;
+        margin:20px 80px 0 80px;
+        &__link{
+          text-decoration: none;
+        }
         &__font{
           padding:0 0 0 30px;
           font-size:30px;
           opacity:0.5;
+          color: black;
         }
+        &__image{
+          padding:0 40px 0 30px;
+          -ms-filter: blur(6px);
+          filter: blur(6px);
+          &__back{
+            height:300px;
+            width:500px;
+            background-image: image-url("example.png");
+            background-size: cover; 
+          }  
+        }        
       }
     } 
   }
