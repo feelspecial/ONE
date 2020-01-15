@@ -47,7 +47,45 @@
             background-image: image-url("example.png");
             background-size: cover; 
           }  
-        }        
+        } 
+      &__footer{
+        margin:30px 0 0 30px;
+        &__top{
+          font-size:22px;
+          opacity:0.5;
+          color: black;
+          }
+        &__under{
+          padding:10px 0 0 60px;
+          &__left{
+            float:left;
+            padding:0 40px 0 0;
+            &__button{
+              height:50px;
+              width:170px;
+              background-color: white;
+              color:#00FFFF;
+              font-size:30px;
+              border:solid 5px #00FFFF;
+              border-radius: 10px;
+              cursor: pointer;
+              }
+            }
+          &__right{
+            float:left;
+            &__button{
+              height:50px;
+              width:170px;
+              background-color: white;
+              color:#00FFFF;
+              font-size:30px;
+              border:solid 5px #00FFFF;
+              border-radius: 10px;
+              cursor: pointer;
+              }
+            }          
+          }
+        }       
       }
     } 
   }

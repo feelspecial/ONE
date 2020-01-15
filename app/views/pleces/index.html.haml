@@ -15,8 +15,10 @@
             %h2.a-content__displayflex__left__box__footer__top__font リクエストする場合にはログインが必要になります。 
           .a-content__displayflex__left__box__footer__under
             .a-content__displayflex__left__box__footer__under__left
-              %button.a-content__displayflex__left__box__footer__under__left__button ログイン
+              = link_to new_user_session_path  do
+                %button.a-content__displayflex__left__box__footer__under__left__button ログイン
             .a-content__displayflex__left__box__footer__under__right 
-              %button.a-content__displayflex__left__box__footer__under__right__button 新規登録
+              = link_to new_user_session_path  do
+                %button.a-content__displayflex__left__box__footer__under__right__button 新規登録
     .a-content__displayflex__right
       =render 'right'
